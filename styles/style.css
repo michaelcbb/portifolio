@@ -3,8 +3,8 @@
 :root {
     --cor-primaria: #201658;
     --cor-secundaria: #F9E8C9;
-    --cor-terciaria: #98ABEE;
-    --cor-hover: #1D24CA;
+    --cor-terciaria: #3359e2;
+    --cor-hover: #45454d;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -16,7 +16,7 @@
 
 body{
     box-sizing: border-box;
-    background-color: var(--cor-primaria);
+    background: linear-gradient(#020202 0%, #000000 33.33%, #050505 66.67%, #220808 100%);
     color: var(--cor-secundaria);
 }
 
