@@ -4,7 +4,7 @@
     --cor-primaria: #11495a;
     --cor-secundaria: #000000;
     --cor-terciaria: #002657;
-    --cor-hover: #310e0e;
+    --cor-hover: #000000;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -25,13 +25,22 @@ nav a{
     text-decoration:none;
     padding: 0px 50px 10px 0;
     font-size: 25pt;
+    position: relative;
 }
 
 nav a::after{
     content: " ";
-    width: 100%;
+    width: 0%;
     height: 4px;
     background-color: #000000;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transition: 0.5 ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 body{
